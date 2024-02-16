@@ -4,7 +4,7 @@
 <g id="Imagem">
 <g clip-path="url(#clip0_492_360)">
 <rect x="110" y="120" width="494" height="520" rx="8" fill="#8492A6" fill-opacity="0.3"/>
-<rect id="image 5" x="33" y="87" width="656" height="578" fill="url(#pattern0)"/>
+<rect id="image 5" x="33" y="87" width="656" height="578" fill="url(#pattern0_about)"/>
 </g>
 </g>
 <g id="Button" filter="url(#filter0_d_492_360)">
@@ -53,7 +53,7 @@
 </g>
 </g>
 <defs>
-<pattern id="pattern0" patternContentUnits="objectBoundingBox" width="1" height="1">
+<pattern id="pattern0_about" patternContentUnits="objectBoundingBox" width="1" height="1">
 <use xlink:href="#image0_492_360" transform="matrix(0.000598572 0 0 0.000679348 -0.000705238 0)"/>
 </pattern>
 <filter id="filter0_d_492_360" x="792" y="521" width="256" height="88" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
