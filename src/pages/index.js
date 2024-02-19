@@ -1,15 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
-import { REM } from "next/font/google";
-import styles from "@/styles/Home.module.scss";
-import Banner from 'public/images/svg/home/BannerHeader.svg';
-import Products from 'public/images/svg/home/Products.svg';
-import Online from 'public/images/svg/home/Online.svg';
-import AboutUs from 'public/images/svg/home/About Us.svg';
-import Testimonials from 'public/images/svg/home/Testimonials.svg';
-import FAQ from 'public/images/svg/home/FAQ.svg';
-
-const rem = REM({ subsets: ["latin"] });
 
 export default function Home() {
   return (
@@ -21,20 +10,8 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <style jsx global>{`
-        text {
-          font-family: ${rem.style.fontFamily};
-          font-style: ${rem.style.fontStyle};
-        }
-      `}</style>
-
-      <main className={`${styles.main} ${rem.className}`}>
-        <Banner />
-        <Products />
-        <Online />
-        <AboutUs />
-        <Testimonials />
-        <FAQ />
+      <main>
+        
       </main>
     </>
   );

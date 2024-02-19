@@ -1,0 +1,95 @@
+@use "scss/mixins";
+
+:root {
+  /* Shadows */
+  --shadow-sm: 0px 2px 4px rgba(11, 31, 77, 0.08);
+  --shadow-md: 0px 4px 8px rgba(11, 31, 77, 0.1);
+  --shadow-lg: 0px 8px 16px rgba(11, 31, 77, 0.12);
+  --shadow-xl: 0px 12px 24px rgba(11, 31, 77, 0.14);
+  --shadow-xxl: 0px 16px 32px rgba(11, 31, 77, 0.16);
+
+  scroll-behavior: smooth !important;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  overflow-x: clip;
+  margin: 0;
+  padding: 0;
+}
+
+figure {
+  margin: 0;
+}
+
+address {
+  font-style: normal;
+}
+
+img {
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+img,
+svg {
+  vertical-align: middle;
+}
+
+section[id] {
+  scroll-margin: 16vh;
+}
+
+ul,
+ol,
+dl,
+menu {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+dialog {
+  width: 100vw;
+  height: 100vh;
+  border-width: 0;
+  padding: 0;
+  margin: 0;
+  max-width: none;
+  max-height: none;
+  background-color: transparent;
+  align-items: center;
+  justify-content: center;
+  color: inherit;
+
+  &[open] {
+    display: flex;
+  }
+
+  &::backdrop {
+    background-color: black;
+    opacity: 0.5;
+    animation: fade-bd 400ms ease-out both normal;
+  }
+}
+
+@include mixins.lg {
+  [class*="col-lg"] {
+    & > div {
+      text-align: center;
+      align-items: center;
+    }
+  }
+}
+
+@include mixins.sm {
+  .col-12 {
+    padding: 0 30px;
+  }
+}
