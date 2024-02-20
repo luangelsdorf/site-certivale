@@ -1,9 +1,6 @@
 import Link from 'next/link';
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import { useRouter } from 'next/router';
-import styles from './Button.module.scss';
-import LightGallery from 'lightgallery/react';
-import lgVideo from 'lightgallery/plugins/video';
 
 export default function Button({
   children,
@@ -20,41 +17,26 @@ export default function Button({
   ...otherProps
 }) {
 
-  const [videoUrl, setVideoUrl] = useState('');
   const router = useRouter();
   let prefix = '';
   if (router.query.referrer) prefix = '/' + router.query.referrer;
 
 
   const Children = () => (
-    <>
-      {LeftIcon && <LeftIcon />}
-      {children && <span>{children}</span>}
-      {RightIcon && <RightIcon />}
-    </>
+    <div>
+      {LeftIcon && LeftIcon}
+      {
+        children && <span>{children}</span>
+      }
+      {RightIcon && RightIcon}
+    </div>
   );
 
   const baseProps = {
-    className: `${styles.btn} ${link ? '' : 'btn-primary'}${className ? ' ' + className : ''}`,
+    className: `${link ? '' : 'btn'}${className ? ' ' + className : ''}`,
   };
 
-  useEffect(() => {
-    if (href.startsWith('$')) {
-      setVideoUrl(href.split('$').at(-1));
-    }
-  }, []);
-
-  if (href.startsWith('$')) {
-    return (
-      <LightGallery closeOnTap={false} showCloseIcon={true} download={false} speed={500} mobileSettings={{ showCloseIcon: true, controls: false }} plugins={[lgVideo]}>
-        <button {...baseProps} type={type} {...otherProps} data-src={videoUrl}>
-          <Children />
-        </button>
-      </LightGallery>
-    )
-  }
-
-  else if (btnElement) {
+  if (btnElement) {
     return (
       <button {...baseProps} type={type} {...otherProps}>
         <Children />

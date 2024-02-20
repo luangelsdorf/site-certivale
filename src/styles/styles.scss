@@ -1,13 +1,9 @@
 @use "scss/mixins";
+@use "scss/buttons";
+@use "scss/colors";
+@use "scss/typography";
 
 :root {
-  /* Shadows */
-  --shadow-sm: 0px 2px 4px rgba(11, 31, 77, 0.08);
-  --shadow-md: 0px 4px 8px rgba(11, 31, 77, 0.1);
-  --shadow-lg: 0px 8px 16px rgba(11, 31, 77, 0.12);
-  --shadow-xl: 0px 12px 24px rgba(11, 31, 77, 0.14);
-  --shadow-xxl: 0px 16px 32px rgba(11, 31, 77, 0.16);
-
   scroll-behavior: smooth !important;
 }
 
@@ -24,7 +20,7 @@ html {
   padding: 0;
 }
 
-figure {
+figure, p {
   margin: 0;
 }
 
