@@ -5,7 +5,6 @@ export default function ProductSelector({ content }) {
   const { register, handleSubmit, watch } = useForm();
 
   const watchValues = watch();
-  console.log(watchValues);
 
   function onSubmit(data, e) {
     console.log(data);

@@ -1,5 +1,6 @@
 import Section from "@/components/common/Section";
 import Banner from "@/components/home/Banner";
+import Products from "@/components/home/Products";
 import Header from "@/components/layout/Header";
 import Head from "next/head";
 
@@ -18,6 +19,10 @@ export default function Home() {
 
         <Section id="inicio">
           <Banner />
+        </Section>
+
+        <Section id="produtos" pt="200 96" pb="120 80">
+          <Products />
         </Section>
       </main>
     </>

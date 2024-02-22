@@ -1,0 +1,93 @@
+.section {
+}
+
+.images {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 100%;
+
+  & > div {
+    position: absolute;
+  }
+
+  img {
+    transition: 400ms ease;
+  }
+
+  .bg {
+    right: 0;
+    background-color: rgb(var(--catskill-white));
+    border-radius: 8px;
+    width: 240px;
+    height: 400px;
+  }
+
+  .picture {
+    height: 100%;
+    width: 424px;
+  }
+
+  .card {
+    width: 320px;
+    height: 200px;
+    right: 40px;
+    bottom: 88px;
+
+    img {
+      object-fit: contain;
+    }
+  }
+}
+
+.textContent {
+  margin-left: 104px;
+  margin-bottom: 28px;
+
+  form {
+    background-color: rgb(var(--catskill-white));
+    display: flex;
+    gap: 8px;
+    width: max-content;
+    padding: 8px;
+    border-radius: 4px;
+
+    label {
+      font: var(--body-sm);
+      cursor: pointer;
+      color: rgb(var(--gray-800));
+      padding: 6px 18px;
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      border-radius: 4px;
+    }
+
+    label, svg {
+      transition: 300ms ease;
+    }
+
+    input {
+      display: none;
+
+      &:checked {
+        & + label {
+          background-color: rgb(var(--white));
+          svg {
+            color: rgb(var(--sky-blue));
+          }
+        }
+      }
+    }
+  }
+
+  & > p {
+    &:first-of-type {
+      margin-top: 40px;
+      margin-bottom: 48px;
+    }
+    &:last-of-type {
+      margin: 40px 0;
+    }
+  }
+}
