@@ -1,0 +1,57 @@
+@use "src/styles/scss/mixins";
+
+.section {
+  background-color: rgb(var(--deep-blue));
+  height: 680px;
+
+  header {
+    h1 {
+      color: rgb(var(--white));
+      margin-bottom: 48px;
+      max-width: 90%;
+    }
+
+    & > p {
+      &:last-of-type {
+        margin-top: 24px;
+        color: rgb(var(--white));
+      }
+    }
+  }
+
+  :global {
+    .col-12,
+    .row,
+    .container {
+      height: 100%;
+    }
+
+    .col-12 {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+  img {
+    width: calc(50vw - (1320px * 0.082)) !important;
+    height: calc(100% + 80px) !important;
+    border-radius: 0 0 0 32px;
+
+    @include mixins.xxl {
+      width: calc(50vw - (1140px * 0.082)) !important;
+    }
+
+    @include mixins.xl {
+      width: calc(50vw - (960px * 0.082)) !important;
+    }
+
+    @include mixins.lg {
+      width: 100% !important;
+    }
+  }
+}
+
+.form {
+  margin-left: -28px;
+}

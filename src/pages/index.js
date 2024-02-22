@@ -1,3 +1,6 @@
+import Section from "@/components/common/Section";
+import Banner from "@/components/home/Banner";
+import Header from "@/components/layout/Header";
 import Head from "next/head";
 
 export default function Home() {
@@ -11,7 +14,11 @@ export default function Home() {
       </Head>
 
       <main>
-        
+        <Header />
+
+        <Section id="inicio">
+          <Banner />
+        </Section>
       </main>
     </>
   );
