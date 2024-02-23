@@ -1,0 +1,28 @@
+.section {
+
+}
+
+.image {
+  position: relative;
+  height: 520px;
+
+  svg {
+    position: absolute;
+    top: 48px;
+    right: -56px;
+  }
+}
+
+.textContent {
+  position: relative;
+  margin-left: 80px;
+  margin-top: 16px;
+
+  h2 {
+    margin-bottom: 48px;
+  }
+
+  p {
+    margin-bottom: 32px;
+  }
+}
