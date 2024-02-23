@@ -10,7 +10,6 @@ export default function Products({ content }) {
   const { register, watch } = useForm({ defaultValues: { product: 'pj' } });
 
   const data = watch();
-  console.log(data.product);
 
   return (
     <div className={styles.section}>

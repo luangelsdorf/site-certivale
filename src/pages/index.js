@@ -1,5 +1,6 @@
 import Section from "@/components/common/Section";
 import Banner from "@/components/home/Banner";
+import Online from "@/components/home/Online";
 import Products from "@/components/home/Products";
 import Header from "@/components/layout/Header";
 import Head from "next/head";
@@ -23,6 +24,10 @@ export default function Home() {
 
         <Section id="produtos" pt="200 96" pb="120 80">
           <Products />
+        </Section>
+
+        <Section id="online" pt="96 80" pb="96 80" style={{backgroundColor: 'rgb(var(--deep-blue))'}}>
+          <Online />
         </Section>
       </main>
     </>
