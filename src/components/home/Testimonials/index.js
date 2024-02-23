@@ -47,7 +47,7 @@ export default function Testimonials({ content }) {
               <div>
                 <h2>O que dizem sobre nós</h2>
                 <div>
-                  <span>{Array(5).fill().map(() => <Star />)}</span>
+                  <span>{Array(5).fill().map((item, i) => <Star key={i} />)}</span>
                   <span>4.8 classificação de 104 avaliações</span>
                 </div>
               </div>

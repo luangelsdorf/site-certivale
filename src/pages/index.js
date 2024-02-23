@@ -41,7 +41,7 @@ export default function Home() {
           <Testimonials />
         </Section>
 
-        <Section id="perguntas-frequentes" pt="120 72" pb="120 72" style={{ background: 'linear-gradient(0deg, rgba(239, 243, 251, 0.25) 0%, rgba(239, 243, 251, 0.25) 100%), #FFF;' }}>
+        <Section id="perguntas-frequentes" pt="120 72" pb="120 72" style={{ background: 'linear-gradient(0deg, rgba(239, 243, 251, 0.25) 0%, rgba(239, 243, 251, 0.25) 100%), #FFF' }}>
           <FAQ />
         </Section>
       </main>

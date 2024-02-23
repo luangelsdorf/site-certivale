@@ -6,7 +6,7 @@ export default function TestimonialCard({ name, rating, text }) {
   return (
     <article className={styles.card}>
       <h3>{name}</h3>
-      <span className={styles.stars}>{Array(rating).fill().map(() => <Star />)}</span>
+      <span className={styles.stars}>{Array(rating).fill().map((item, i) => <Star key={i} />)}</span>
       <blockquote>{text}</blockquote>
       <GoogleLogo />
     </article>
