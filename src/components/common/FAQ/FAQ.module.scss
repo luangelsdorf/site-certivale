@@ -1,0 +1,47 @@
+.section {
+  header {
+    p {
+      margin-top: 48px;
+      margin-bottom: 32px;
+    }
+  }
+}
+
+.questions {
+  width: calc(100% + 48px);
+  position: relative;
+  left: -24px;
+
+  .question {
+    cursor: pointer;
+    padding: 20px 32px;
+    border-bottom: 1px solid rgb(var(--gray-700), 0.3);
+
+    summary {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      h3 {
+        font: var(--body-md);
+        color: rgb(var(--gray-800));
+      }
+      svg {
+        width: 12px;
+        color: rgb(var(--gray-800));
+        transition: 300ms ease;
+      }
+    }
+
+    &[open] {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  .answer {
+    font: var(--body-sm);
+    margin-top: 24px;
+  }
+}

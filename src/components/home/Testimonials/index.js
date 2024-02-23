@@ -46,7 +46,7 @@ export default function Testimonials({ content }) {
             <header>
               <div>
                 <h2>O que dizem sobre nós</h2>
-                <div className="d-flex align-items-center">
+                <div>
                   <span>{Array(5).fill().map(() => <Star />)}</span>
                   <span>4.8 classificação de 104 avaliações</span>
                 </div>

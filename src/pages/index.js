@@ -1,3 +1,4 @@
+import FAQ from "@/components/common/FAQ";
 import Section from "@/components/common/Section";
 import Banner from "@/components/home/Banner";
 import History from "@/components/home/History";
@@ -38,6 +39,10 @@ export default function Home() {
 
         <Section id="testimonials" pt="96 72" pb="104 72">
           <Testimonials />
+        </Section>
+
+        <Section id="perguntas-frequentes" pt="120 72" pb="120 72" style={{ background: 'linear-gradient(0deg, rgba(239, 243, 251, 0.25) 0%, rgba(239, 243, 251, 0.25) 100%), #FFF;' }}>
+          <FAQ />
         </Section>
       </main>
     </>

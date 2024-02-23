@@ -21,11 +21,16 @@
       span {
         font: var(--body-sm);
         line-height: normal;
+        display: flex;
+        gap: 4px;
       }
     }
   }
 
   :global(.slick-slide) {
     margin-right: 24px;
+  }
+  :global(.slick-track) {
+    display: flex;
   }
 }
