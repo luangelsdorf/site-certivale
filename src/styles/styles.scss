@@ -20,7 +20,7 @@ html {
   padding: 0;
 }
 
-figure, p {
+blockquote, figure, p {
   margin: 0;
 }
 
@@ -88,4 +88,10 @@ dialog {
   .col-12 {
     padding: 0 30px;
   }
+}
+
+
+
+.slick-list {
+  overflow: visible;
 }

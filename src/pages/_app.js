@@ -1,4 +1,5 @@
 import 'bootstrap/dist/css/bootstrap-grid.min.css';
+import '@/styles/slick.css';
 import '@fortawesome/fontawesome-svg-core/styles.css';
 import "@/styles/styles.scss";
 import { REM } from 'next/font/google';
