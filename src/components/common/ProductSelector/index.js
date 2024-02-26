@@ -36,7 +36,7 @@ export default function ProductSelector({ content }) {
           <option value="2 anos">2 Anos</option>
         </select>
       </form>
-      <input className="btn lg" type="submit" form="seletor" value="Comprar" />
+      <input disabled={!watchValues.expiration} className="btn lg" type="submit" form="seletor" value="Comprar" />
     </div>
   )
 }

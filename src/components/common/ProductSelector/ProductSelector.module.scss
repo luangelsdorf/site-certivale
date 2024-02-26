@@ -45,5 +45,10 @@
     border: 0;
     margin-right: 8px;
     border-radius: 300px;
+
+    &[disabled] {
+      cursor: auto;
+      opacity: 0.4;
+    }
   }
 }
