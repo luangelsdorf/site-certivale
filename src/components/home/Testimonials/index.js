@@ -56,7 +56,7 @@ export default function Testimonials({ content }) {
           </div>
         </div>
         <div className="row">
-          <Slider autoplay slidesToShow={3} swipeToSlide arrows={false}>
+          <Slider autoplay={500} speed={500} slidesToShow={3} swipeToSlide arrows={false}>
             {
               quotes.map((quote, i) => <TestimonialCard {...quote} key={i} />)
             }

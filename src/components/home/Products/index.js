@@ -5,11 +5,30 @@ import { faArrowRightLong, faBuilding, faUser } from '@fortawesome/free-solid-sv
 import { useForm } from 'react-hook-form';
 import Button from '@/components/common/Button';
 import { getSizesString } from '@/utils/images';
+import { useEffect, useRef } from 'react';
 
 export default function Products({ content }) {
-  const { register, watch } = useForm({ defaultValues: { product: 'pj' } });
-
+  const { register, watch, setValue, getValues } = useForm({ defaultValues: { product: 'pj' } });
   const data = watch();
+
+  const interval = useRef(null);
+
+  useEffect(() => {
+    interval.current = setInterval(() => {
+      const currentProduct = getValues('product');
+      setValue('product', currentProduct === 'pj' ? 'pf' : 'pj');
+    }, 3200);
+
+    return () => clearInterval(interval.current);
+  }, []);
+
+  function handleClick(e) {
+    clearInterval(interval.current);
+    setTimeout(() => {
+      const currentProduct = getValues('product');
+      setValue('product', currentProduct === 'pj' ? 'pf' : 'pj');
+    }, 3200);
+  }
 
   return (
     <div className={styles.section}>
@@ -34,12 +53,12 @@ export default function Products({ content }) {
               <p>Conquiste a segurança digital com nossos Certificados e-CPF e e-CNPJ, sua identidade e validade jurídica na internet.</p>
               <form>
                 <input value="pf" type="radio" name="product" id="pf" {...register('product')} />
-                <label htmlFor="pf">
+                <label onClick={handleClick} htmlFor="pf">
                   <FontAwesomeIcon icon={faUser} />
                   <span>Pessoa Física</span>
                 </label>
                 <input defaultChecked value="pj" type="radio" name="product" id="pj" {...register('product')} />
-                <label htmlFor="pj">
+                <label onClick={handleClick} htmlFor="pj">
                   <FontAwesomeIcon icon={faBuilding} />
                   <span>Pessoa Jurídica</span>
                 </label>
