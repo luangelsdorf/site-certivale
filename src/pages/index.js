@@ -7,6 +7,8 @@ import Products from "@/components/home/Products";
 import Testimonials from "@/components/home/Testimonials";
 import Header from "@/components/layout/Header";
 import Head from "next/head";
+import CTA from 'public/images/svg/contact-cta.svg';
+import Footer from 'public/images/svg/footer.svg';
 
 export default function Home() {
   return (
@@ -43,6 +45,14 @@ export default function Home() {
 
         <Section id="perguntas-frequentes" pt="120 72" pb="120 72" style={{ background: 'linear-gradient(0deg, rgba(239, 243, 251, 0.25) 0%, rgba(239, 243, 251, 0.25) 100%), #FFF' }}>
           <FAQ />
+        </Section>
+
+        <Section>
+          <CTA style={{ width: '100%', height: 'auto' }} />
+        </Section>
+
+        <Section>
+          <Footer style={{ width: '100%', height: 'auto' }} />
         </Section>
       </main>
     </>
