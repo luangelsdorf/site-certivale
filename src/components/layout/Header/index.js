@@ -42,10 +42,11 @@ export default function Header() {
         <Button RightIcon={<FontAwesomeIcon icon={faAngleDown} />} onClick={handleClick} href="#" link>Produtos</Button>
         <div className={styles.dropdown}>
           <DropdownMenu>
-            <Button link href="#">Link</Button>
-            <Button link href="#">Link</Button>
-            <Button link href="#">Link</Button>
-            <Button link href="#">Link</Button>
+            <Button link href="#">e-CPF</Button>
+            <Button link href="#">e-CNPJ</Button>
+            <Button link href="#">Nuvem</Button>
+            <Button link href="#">NF-e</Button>
+            <Button link href="#">In Company</Button>
           </DropdownMenu>
         </div>
       </li>
@@ -53,17 +54,27 @@ export default function Header() {
         <Button RightIcon={<FontAwesomeIcon icon={faAngleDown} />} onClick={handleClick} href="#" link>Suporte</Button>
         <div className={styles.dropdown}>
           <DropdownMenu>
-            <Button link href="#">Link</Button>
-            <Button link href="#">Link</Button>
-            <Button link href="#">Link</Button>
+            <Button link href="#">Downloads e Instalação</Button>
+            <Button link href="#">Perguntas Frequentes</Button>
+            <Button link href="#">Central de Ajuda</Button>
           </DropdownMenu>
         </div>
       </li>
-      <li data-dd-trigger>
+      <li>
         <Button onClick={handleClick} href="#" link>Parceiro</Button>
       </li>
-      <li data-dd-trigger>
+      <li>
         <Button onClick={handleClick} href="#" link>Sobre Nós</Button>
+      </li>
+      <li>
+        <Button RightIcon={<FontAwesomeIcon icon={faAngleDown} />} onClick={handleClick} href="#" link>Contatos</Button>
+        <div className={styles.dropdown}>
+          <DropdownMenu>
+            <Button link href="#">Fale Conosco</Button>
+            <Button link href="#">Locais de Atendimento</Button>
+            <Button link href="#">Trabalhe Conosco</Button>
+          </DropdownMenu>
+        </div>
       </li>
     </ul>
   );

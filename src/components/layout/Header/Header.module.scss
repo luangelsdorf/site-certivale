@@ -21,7 +21,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 0 12px;
-    border-bottom: 1px solid rgba(var(--white), 0.10);
+    border-bottom: 1px solid rgba(var(--white), 0.1);
   }
 
   .logo {
@@ -58,6 +58,13 @@
 
     & > li {
       padding: 32px 0;
+
+      &:nth-child(n + 5) {
+        opacity: 0;
+        transform: translateY(-8px);
+        pointer-events: none;
+        transition: opacity 400ms ease, transform 0ms 400ms ease;
+      }
     }
 
     a {
@@ -68,6 +75,7 @@
       div {
         gap: 8px;
         svg {
+          width: 0.564em;
           transition: 300ms ease;
         }
       }
@@ -179,7 +187,7 @@
   &:global(.active) {
     box-shadow: 0 2px 20px 6px rgba(20, 20, 43, 0.1);
     background-color: white;
-    
+
     :global(.container) {
       border-bottom: 0;
     }
@@ -193,7 +201,16 @@
       a {
         color: rgb(var(--deep-blue));
       }
+      & > li {
+        &:nth-child(n + 5) {
+          opacity: 1;
+          transform: translateY(0);
+          pointer-events: all;
+          transition: all 400ms 400ms ease;
+        }
+      }
     }
+
     .logo {
       svg {
         path {
