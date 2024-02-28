@@ -42,8 +42,8 @@ export default function Products({ content }) {
                 <Image style={{ opacity: data.product === 'pf' ? 1 : 0 }} src="/images/home/produtos-ecpf.png" fill sizes={getSizesString('col-12 col-lg-4')} />
               </div>
               <div className={styles.card}>
-                <Image style={{ opacity: data.product === 'pj' ? 1 : 0 }} src="/images/home/cartao-ecnpj.png" fill sizes={getSizesString('col-12 col-lg-3')} />
-                <Image style={{ opacity: data.product === 'pf' ? 1 : 0 }} src="/images/home/cartao-ecpf.png" fill sizes={getSizesString('col-12 col-lg-3')} />
+                <Image style={{ opacity: data.product === 'pj' ? 1 : 0 }} src="/images/home/cartao-ecnpj.svg" fill sizes={getSizesString('col-12 col-lg-3')} />
+                <Image style={{ opacity: data.product === 'pf' ? 1 : 0 }} src="/images/home/cartao-ecpf.svg" fill sizes={getSizesString('col-12 col-lg-3')} />
               </div>
             </div>
           </div>
