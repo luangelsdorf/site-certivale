@@ -1,6 +1,7 @@
 import FAQ from "@/components/common/FAQ";
 import Section from "@/components/common/Section";
 import Banner from "@/components/home/Banner";
+import CallToAction from "@/components/home/CallToAction";
 import History from "@/components/home/History";
 import Online from "@/components/home/Online";
 import Products from "@/components/home/Products";
@@ -47,8 +48,8 @@ export default function Home() {
           <FAQ />
         </Section>
 
-        <Section>
-          <CTA style={{ width: '100%', height: 'auto' }} />
+        <Section id="chamada" pt="96" pb="96" style={{ backgroundColor: 'rgb(var(--deep-blue))' }}>
+          <CallToAction />
         </Section>
 
         <Section>

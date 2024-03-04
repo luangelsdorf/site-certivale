@@ -61,6 +61,14 @@ a:not(.wrapper) {
       }
     }
 
+    svg {
+      color: rgb(var(--sky-blue));
+    }
+
+    &.light {
+      color: rgb(var(--white));
+    }
+
     &:hover {
       span {
         &::after {
