@@ -6,10 +6,9 @@ import History from "@/components/home/History";
 import Online from "@/components/home/Online";
 import Products from "@/components/home/Products";
 import Testimonials from "@/components/home/Testimonials";
+import Footer from "@/components/layout/Footer";
 import Header from "@/components/layout/Header";
 import Head from "next/head";
-import CTA from 'public/images/svg/contact-cta.svg';
-import Footer from 'public/images/svg/footer.svg';
 
 export default function Home() {
   return (
@@ -52,8 +51,8 @@ export default function Home() {
           <CallToAction />
         </Section>
 
-        <Section>
-          <Footer style={{ width: '100%', height: 'auto' }} />
+        <Section id="rodape">
+          <Footer />
         </Section>
       </main>
     </>
