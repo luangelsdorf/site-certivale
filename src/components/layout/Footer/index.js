@@ -42,19 +42,19 @@ export default function Footer({ content }) {
           </div>
           <div className="col-12 col-lg-2">
             <div className={styles.linkColumn}>
-              <h2>Produtos</h2>
+              <h2>Institucional</h2>
               <ul>
                 <li>
-                  <Button link>Certificado e-CPF</Button>
+                  <Button link>Sobre nós</Button>
                 </li>
                 <li>
-                  <Button link>Certificado e-CNPJ</Button>
+                  <Button link>Política de Garantia</Button>
                 </li>
                 <li>
-                  <Button link>Certificado em Nuvem</Button>
+                  <Button link>Política de Privacidade</Button>
                 </li>
                 <li>
-                  <Button link>Nota Fiscal Eletrônica</Button>
+                  <Button link>DPN AR Certivale</Button>
                 </li>
               </ul>
             </div>
@@ -64,16 +64,16 @@ export default function Footer({ content }) {
               <h2>Produtos</h2>
               <ul>
                 <li>
-                  <Button link>Certificado e-CPF</Button>
+                  <Button link>Fale Conosco</Button>
                 </li>
                 <li>
-                  <Button link>Certificado e-CNPJ</Button>
+                  <Button link>Locais de Atendimento</Button>
                 </li>
                 <li>
-                  <Button link>Certificado em Nuvem</Button>
+                  <Button link>Trabalhe Conosco</Button>
                 </li>
                 <li>
-                  <Button link>Nota Fiscal Eletrônica</Button>
+                  <Button link>Perguntas Frequentes</Button>
                 </li>
               </ul>
             </div>
