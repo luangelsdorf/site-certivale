@@ -1,0 +1,75 @@
+.wrapper {
+  cursor: pointer;
+  display: flex;
+  padding: 16px 24px;
+  outline: 1px solid rgb(var(--gray-200));
+  border-radius: 4px;
+  transition: outline-color 350ms ease;
+  user-select: none;
+
+  &:has(:checked) {
+    outline-width: 2px;
+    outline-color: rgb(var(--sky-blue));
+  }
+
+  & > .product {
+    gap: 24px;
+    justify-content: flex-start;
+  }
+
+  & > div {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    color: rgb(var(--gray-800));
+
+    &:nth-of-type(2) {
+      border-left: 1px solid rgb(var(--gray-700), 0.3);
+      border-right: 1px solid rgb(var(--gray-700), 0.3);
+      height: 48px;
+      margin: -8px 0;
+    }
+
+    span {
+      text-align: center;
+      &:first-of-type {
+        font: var(--body-sm);
+        color: rgb(var(--gray-700));
+      }
+    }
+  }
+
+  input {
+    appearance: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 300px;
+    position: relative;
+    outline: 1px solid rgb(var(--gray-700), 0.3);
+    transition: outline-color 350ms ease;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background-color: rgb(var(--sky-blue));
+      width: 16px;
+      height: 16px;
+      border-radius: 300px;
+      opacity: 0;
+      transition: 350ms ease;
+    }
+
+    &:checked {
+      outline-width: 2px;
+      outline-color: rgb(var(--sky-blue));
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
+}

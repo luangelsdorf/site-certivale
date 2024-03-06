@@ -1,6 +1,8 @@
 import Image from 'next/image';
 import styles from './Banner.module.scss';
 import ProductSelector from '@/components/common/ProductSelector';
+import Modal from '@/components/common/Modal';
+import Checkout from '@/components/common/Checkout';
 
 export default function Banner({ content }) {
   return (
@@ -22,6 +24,10 @@ export default function Banner({ content }) {
           </div>
         </div>
       </div>
+
+      {/* <Modal open={true}>
+        <Checkout />
+      </Modal> */}
     </div>
   )
 }

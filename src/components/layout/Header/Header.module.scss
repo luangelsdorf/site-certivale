@@ -10,7 +10,7 @@
 .header {
   position: fixed;
   top: 0;
-  z-index: 20;
+  z-index: 10;
   width: 100%;
   display: flex;
   align-items: center;
@@ -75,6 +75,7 @@
       div {
         gap: 8px;
         svg {
+          color: white;
           width: 0.564em;
           transition: 300ms ease;
         }

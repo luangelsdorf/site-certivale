@@ -1,14 +1,17 @@
 [
   {
+    "id": 1,
     "product": "e-CPF",
     "model": "A1",
     "emission": "inPerson",
     "expiryValues": {
       "12": 150
     },
-    "media": "file"
+    "media": "Arquivo",
+    "note": "Esse Certificado Digital é emitido e armazenado no computador do titular, sendo protegido por uma senha de instalação."
   },
   {
+    "id": 2,
     "product": "e-CPF",
     "emission": "inPerson",
     "model": "A3",
@@ -17,9 +20,11 @@
       "24": 190,
       "36": 230
     },
-    "media": "software"
+    "media": "Software",
+    "note": "Esse Certificado Digital é emitido e armazenado no computador do titular, sendo protegido por uma senha de instalação."
   },
   {
+    "id": 3,
     "product": "e-CPF",
     "emission": "inPerson",
     "model": "A3",
@@ -28,9 +33,11 @@
       "24": 245,
       "36": 285
     },
-    "media": "card"
+    "media": "Cartão",
+    "note": "Esse Certificado Digital é emitido e armazenado no computador do titular, sendo protegido por uma senha de instalação."
   },
   {
+    "id": 4,
     "product": "e-CPF",
     "emission": "inPerson",
     "model": "A3",
@@ -39,18 +46,22 @@
       "24": 370,
       "36": 410
     },
-    "media": "token"
+    "media": "Token",
+    "note": "Esse Certificado Digital é emitido e armazenado no computador do titular, sendo protegido por uma senha de instalação."
   },
   {
+    "id": 5,
     "product": "e-CNPJ",
     "emission": "inPerson",
     "model": "A1",
     "expiryValues": {
       "12": 195
     },
-    "media": "file"
+    "media": "Arquivo",
+    "note": "Esse Certificado Digital é emitido e armazenado no computador do titular, sendo protegido por uma senha de instalação."
   },
   {
+    "id": 6,
     "product": "e-CNPJ",
     "emission": "inPerson",
     "model": "A3",
@@ -59,9 +70,11 @@
       "24": 260,
       "36": 320
     },
-    "media": "software"
+    "media": "Software",
+    "note": "Esse Certificado Digital é emitido e armazenado no computador do titular, sendo protegido por uma senha de instalação."
   },
   {
+    "id": 7,
     "product": "e-CNPJ",
     "emission": "inPerson",
     "model": "A3",
@@ -70,9 +83,11 @@
       "24": 315,
       "36": 375
     },
-    "media": "card"
+    "media": "Cartão",
+    "note": "Esse Certificado Digital é emitido e armazenado no computador do titular, sendo protegido por uma senha de instalação."
   },
   {
+    "id": 8,
     "product": "e-CNPJ",
     "emission": "inPerson",
     "model": "A3",
@@ -81,18 +96,22 @@
       "24": 440,
       "36": 500
     },
-    "media": "token"
+    "media": "Token",
+    "note": "Esse Certificado Digital é emitido e armazenado no computador do titular, sendo protegido por uma senha de instalação."
   },
   {
+    "id": 9,
     "product": "NF-e",
     "emission": "inPerson",
     "model": "A1",
     "expiryValues": {
       "12": 230
     },
-    "media": "file"
+    "media": "Arquivo",
+    "note": "Esse Certificado Digital é emitido e armazenado no computador do titular, sendo protegido por uma senha de instalação."
   },
   {
+    "id": 10,
     "product": "NF-e",
     "emission": "inPerson",
     "model": "A3",
@@ -101,9 +120,11 @@
       "24": 290,
       "36": 340
     },
-    "media": "software"
+    "media": "Software",
+    "note": "Esse Certificado Digital é emitido e armazenado no computador do titular, sendo protegido por uma senha de instalação."
   },
   {
+    "id": 11,
     "product": "NF-e",
     "emission": "inPerson",
     "model": "A3",
@@ -112,9 +133,11 @@
       "24": 345,
       "36": 395
     },
-    "media": "card"
+    "media": "Cartão",
+    "note": "Esse Certificado Digital é emitido e armazenado no computador do titular, sendo protegido por uma senha de instalação."
   },
   {
+    "id": 12,
     "product": "NF-e",
     "emission": "inPerson",
     "model": "A3",
@@ -123,9 +146,11 @@
       "24": 470,
       "36": 520
     },
-    "media": "token"
+    "media": "Token",
+    "note": "Esse Certificado Digital é emitido e armazenado no computador do titular, sendo protegido por uma senha de instalação."
   },
   {
+    "id": 13,
     "product": "SafeID CPF",
     "emission": "inPerson",
     "model": "A3",
@@ -133,15 +158,18 @@
       "4": 75,
       "12": 150
     },
-    "media": "file"
+    "media": "Arquivo",
+    "note": "Esse Certificado Digital é emitido e armazenado no computador do titular, sendo protegido por uma senha de instalação."
   },
   {
+    "id": 14,
     "product": "SafeID CNPJ",
     "emission": "inPerson",
     "model": "A3",
     "expiryValues": {
       "12": 215
     },
-    "media": "file"
+    "media": "Arquivo",
+    "note": "Esse Certificado Digital é emitido e armazenado no computador do titular, sendo protegido por uma senha de instalação."
   }
 ]
