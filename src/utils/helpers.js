@@ -33,3 +33,18 @@ export function toFormatted(text = '') {
     </>
   );
 }
+
+export function monthsToYears(months) {
+  if (months < 12) {
+    return `${months} ${months === 1 ? 'mês' : 'meses'}`;
+  }
+  else if (months % 12 === 0) {
+    let yearCount = months / 12;
+    return `${(yearCount)} ${yearCount === 1 ? 'ano' : 'anos'}`;
+  }
+  else {
+    let yearCount = Math.floor(months / 12);
+    let monthCount = months % 12;
+    return `${yearCount} ${yearCount === 1 ? 'ano' : 'anos'} e ${monthCount} ${monthCount === 1 ? 'mês' : 'meses'}`;
+  }
+}
